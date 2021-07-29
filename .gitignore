@@ -3,3 +3,6 @@
 venv
 twitter-sentiment-model-1
 twitter-sentiment-model-2
+*.pyc
+.env
+.DS_Store

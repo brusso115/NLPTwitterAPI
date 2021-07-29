@@ -32,6 +32,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 #external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 pio.templates.default = "plotly_dark"
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
+server = app.server
 loaded_model = tf.keras.models.load_model('twitter-sentiment-model-1')
 
 # assume you have a "long-form" data frame
