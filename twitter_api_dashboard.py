@@ -8,13 +8,13 @@ import dash_core_components as dcc
 import dash_html_components as html
 import plotly.express as px
 import dash_bootstrap_components as dbc
-import tensorflow as tf
 import emoji
 from transformers import AutoTokenizer
 from Tweet import Tweet
 from nltk.corpus import stopwords
 from sentence_transformers import SentenceTransformer
 from plotly.subplots import make_subplots
+from tensorflow import keras
 import tweepy
 import numpy as np
 import plotly.graph_objects as go
@@ -33,7 +33,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 pio.templates.default = "plotly_dark"
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
 server = app.server
-loaded_model = tf.keras.models.load_model('twitter-sentiment-model-2')
+loaded_model = keras.models.load_model('twitter-sentiment-model-2')
 
 # assume you have a "long-form" data frame
 # see https://plotly.com/python/px-arguments/ for more options
