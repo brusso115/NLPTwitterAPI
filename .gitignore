@@ -1,4 +1,5 @@
-*.txt
+keys.txt
+Twitter_API_Keys.txt
 *.csv
 venv
 twitter-sentiment-model-1
