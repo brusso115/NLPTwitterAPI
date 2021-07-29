@@ -1,3 +1,5 @@
 *.txt
 *.csv
 venv
+twitter-sentiment-model-1
+twitter-sentiment-model-2
