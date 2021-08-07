@@ -1,1 +1,0 @@
-web: gunicorn twitter_api_dashboard:server
